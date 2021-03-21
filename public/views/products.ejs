@@ -1,0 +1,8 @@
+<div>
+        <ul>
+            <% productsList.forEach(function (product) {%>
+                <li>title: <%= product.title %> || description: <%= product.description %> || price: <%= product.price %> || sale price: <%= product.sale_price %> || available: <%= product.available %></li>
+                <img src="<%= product.image_url %>" style="width: 300px; height: 300px; margin-bottom: 50px;">
+            <% })%>
+        </ul>
+</div>

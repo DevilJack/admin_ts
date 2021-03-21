@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
+    "target": "esnext",
     "module": "commonjs",
-    "outDir": "dist",
+    "moduleResolution": "node",
+    "strict": true,
+    "strictPropertyInitialization": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "target": "esnext",
-    "strict": true
+    "outDir": "dist",
+    "skipLibCheck": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

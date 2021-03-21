@@ -4,12 +4,11 @@
   "description": "Api gets ping answers pong",
   "main": "dist/server.js",
   "scripts": {
-    "start": "tsc -w && ."
+    "start": "tsc -w"
   },
   "author": "zhozh",
   "license": "MIT",
   "dependencies": {
-    "ejs-lint": "^1.1.0",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
     "koa-ejs": "^4.3.0",
@@ -23,7 +22,6 @@
     "ts-node": "^9.1.1"
   },
   "devDependencies": {
-    "@types/ejs": "^3.0.6",
     "@types/koa": "^2.13.1",
     "@types/koa-bodyparser": "^4.3.0",
     "@types/koa-ejs": "^4.2.2",

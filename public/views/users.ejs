@@ -1,5 +1,7 @@
-<ul>
-    <% usersList.forEach(function (user) {%>
-        <li><%= user.name %></li>
-    <% })%>
-</ul>
+<div>
+        <ul>
+            <% usersList.forEach(function (user) {%>
+                <li>name: <%= user.name %> email: <%= user.email %> gender: <%= user.gender %> </li>
+            <% })%>
+        </ul>
+</div>

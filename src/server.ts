@@ -8,7 +8,7 @@ import { config } from "./config";
 import pingRoutes from "./routes/ping";
 import mainRoutes from "./routes/main";
 import usersRoutes from "./routes/users";
-// import views from "koa-views";
+import productsRoutes from "./routes/products";
 import render from "koa-ejs";
 import path from "path";
 
@@ -34,6 +34,7 @@ app.use(
 app.use(logger());
 app.use(pingRoutes.routes()).use(pingRoutes.allowedMethods());
 app.use(usersRoutes.routes()).use(usersRoutes.allowedMethods());
+app.use(productsRoutes.routes()).use(productsRoutes.allowedMethods());
 app.use(mainRoutes.routes()).use(mainRoutes.allowedMethods());
 
 const server = app
@@ -43,5 +44,3 @@ const server = app
     .on("error", err => {
         console.error(err);
     });
-
-export default server;
