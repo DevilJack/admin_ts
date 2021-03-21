@@ -6,5 +6,4 @@
 build/
 tmp/
 temp/
-dist/*
-coverage/*
+/dist/*

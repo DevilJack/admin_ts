@@ -24,6 +24,7 @@ koa_ejs_1.default(app, {
 });
 const PORT = config_1.config.port;
 app.use(koa_bodyparser_1.default());
+
 app.use(koa2_cors_1.default({
     origin: "*"
 }));
